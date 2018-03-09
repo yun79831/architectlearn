@@ -16,6 +16,8 @@ public class SingletonTest {
     //测试饥汉模式
     @Test
     public void hungryTest() {
+        Integer t=Integer.valueOf(127);
+        Integer t1=Integer.valueOf(128);
         int count = 200;
         //线程
         long star=System.currentTimeMillis();
