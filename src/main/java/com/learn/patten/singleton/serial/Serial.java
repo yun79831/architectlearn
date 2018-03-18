@@ -15,4 +15,9 @@ public class Serial implements Serializable {
     public static final Serial getInstance() {
         return SERIAL;
     }
+
+    //通过该方法 使其单例 反序列化不被破坏
+    private Object readResolve() {
+        return SERIAL;
+    }
 }

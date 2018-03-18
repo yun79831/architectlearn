@@ -1,11 +1,7 @@
 package com.learn.patten.proxy.dynamic;
 
-import com.learn.patten.proxy.staticed.Tom;
-import net.sf.cglib.proxy.Enhancer;
+import com.learn.patten.proxy.demo.Son;
 import net.sf.cglib.proxy.InvocationHandler;
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
-import org.junit.Test;
 import sun.misc.ProxyGenerator;
 
 import java.io.FileOutputStream;
@@ -25,7 +21,7 @@ public class CglibProxy implements InvocationHandler {
 //        再重新加载到jvm中运行
 //        以上这个过程就叫字节码重组
         //JDK 中$开头的类 是自动生成的 内部类
-        byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy0.class", new Class[]{Tom.class});
+        byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy0.class", new Class[]{Son.class});
         try {
             FileOutputStream os = new FileOutputStream("d://$Proxy.class");
             os.write(bytes);

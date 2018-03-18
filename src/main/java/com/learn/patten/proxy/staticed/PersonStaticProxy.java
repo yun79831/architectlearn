@@ -1,12 +1,14 @@
 package com.learn.patten.proxy.staticed;
 
+import com.learn.patten.proxy.demo.Son;
+
 /**
  * Created by admin on 2018/3/10.
  */
 public class PersonStaticProxy {
-    Tom tom;
+    Son tom;
 
-    public PersonStaticProxy(Tom t) {
+    public PersonStaticProxy(Son t) {
         this.tom = t;
     }
 

@@ -11,6 +11,8 @@ import com.learn.patten.singleton.serial.Serial;
 import org.junit.Test;
 
 import java.io.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -60,7 +62,7 @@ public class SingletonTest {
 //                    LazyTwo lazy = LazyTwo.getInstance();
 //                    LazyThree lazy = LazyThree.getInstance();
 //                    LazyFour lazy = LazyFour.getInstance();
-//                     Color lazy=Color.RED;
+//                     Drinks lazy=Drinks.RED;
                     BeanFactory lazy = (BeanFactory) BeanFactory.getBean("com.learn.patten.singleton.register.BeanFactory");
 
                     System.out.println(System.currentTimeMillis() + "  " + lazy);
@@ -85,8 +87,6 @@ public class SingletonTest {
         Serial s3 = null;
         System.out.println(s1);
         System.out.println(s2);
-
-
         try {
             FileOutputStream fos = new FileOutputStream("temp.ser");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -107,8 +107,24 @@ public class SingletonTest {
         }
 
         System.out.println(s3);
-        System.out.println(s3==s2);
-
+        System.out.println(s3 == s2);
     }
+
+    //反射破坏
+    @Test
+    public void reflexCrack() {
+        try {
+            //获取私有构造函数
+            Constructor c = Hungry.class.getDeclaredConstructor(null);
+            //强制访问
+            c.setAccessible(true);
+            Object o1 = c.newInstance();
+            Object o2 = c.newInstance();
+            System.out.println(o1 == o2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

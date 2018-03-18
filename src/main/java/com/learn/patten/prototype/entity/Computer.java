@@ -22,13 +22,15 @@ public class Computer implements Cloneable, Serializable {
     }
 
     @Override
-    //浅拷贝
+    //浅克隆
     public Object clone() throws CloneNotSupportedException {
-        //clone 构造函数不再执行
+        //  实现Cloneable接口  通过clone()克隆 构造函数不再执行
         return super.clone();
     }
 
+    //深克隆
     public Computer deepClone() {
+        //实现序列化接口通过字节数组流和对象流进行克隆
         try {
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(bos);

@@ -1,10 +1,8 @@
 package com.learn.patten.proxy;
 
 import com.learn.patten.proxy.staticed.PersonStaticProxy;
-import com.learn.patten.proxy.staticed.Tom;
+import com.learn.patten.proxy.demo.Son;
 import org.junit.Test;
-
-import java.lang.reflect.Proxy;
 
 /**
  * 代理模式
@@ -15,7 +13,7 @@ public class proxyTest {
     //静态台历  person代理  代理tom 去吃东西
     @Test
     public void staticedTest() {
-        Tom tom = new Tom();
+        Son tom = new Son();
         PersonStaticProxy personStaticProxy = new PersonStaticProxy(tom);
         personStaticProxy.eat();
     }

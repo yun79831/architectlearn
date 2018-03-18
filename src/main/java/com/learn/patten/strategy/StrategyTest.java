@@ -6,6 +6,7 @@ import com.learn.patten.strategy.pay.Payment;
 import org.junit.Test;
 
 /**
+ * 策略模式
  * Created by admin on 2018/3/11.
  */
 public class StrategyTest {
