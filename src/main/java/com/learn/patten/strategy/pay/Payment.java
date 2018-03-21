@@ -3,11 +3,10 @@ package com.learn.patten.strategy.pay;
 import com.learn.patten.strategy.entity.PayState;
 
 /**
+ * 策略模式中各种策略需要有一个共同的基类
  * Created by admin on 2018/3/11.
  */
 public interface Payment {
-    Payment ALI_PAY = new AliPay();
-    Payment WECHAT_PAY = new WechatPay();
-    PayState pay(String orderid,Double amount);
+    PayState pay(String orderId, Double amount);
 
 }

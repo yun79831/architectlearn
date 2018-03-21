@@ -10,9 +10,6 @@ import org.junit.Test;
  * Created by admin on 2018/3/11.
  */
 public class StrategyTest {
-    public static void main(String[] args) {
-
-    }
 
     @Test
     public void test() {

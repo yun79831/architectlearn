@@ -1,7 +1,7 @@
 package com.learn.patten.factory;
 
 import com.learn.patten.factory.abstr.FruitsFactory;
-import com.learn.patten.factory.demo.Fruits;
+import com.learn.patten.factory.entity.Fruits;
 import com.learn.patten.factory.func.AppleFactory;
 import com.learn.patten.factory.func.BananaFactory;
 import com.learn.patten.factory.func.Factory;

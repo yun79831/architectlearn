@@ -1,9 +1,9 @@
 package com.learn.patten.factory.abstr;
 
-import com.learn.patten.factory.demo.Apple;
-import com.learn.patten.factory.demo.Banana;
-import com.learn.patten.factory.demo.Fruits;
-import com.learn.patten.factory.demo.Strawberry;
+import com.learn.patten.factory.entity.Apple;
+import com.learn.patten.factory.entity.Banana;
+import com.learn.patten.factory.entity.Fruits;
+import com.learn.patten.factory.entity.Strawberry;
 
 /**
  * Created by admin on 2018/3/18.

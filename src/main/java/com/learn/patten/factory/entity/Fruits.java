@@ -1,4 +1,4 @@
-package com.learn.patten.factory.demo;
+package com.learn.patten.factory.entity;
 
 /**
  * 水果接口类

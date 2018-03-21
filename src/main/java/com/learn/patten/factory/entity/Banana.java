@@ -1,4 +1,4 @@
-package com.learn.patten.factory.demo;
+package com.learn.patten.factory.entity;
 
 /**
  * Created by admin on 2018/3/18.

@@ -1,6 +1,6 @@
 package com.learn.patten.factory.abstr;
 
-import com.learn.patten.factory.demo.Fruits;
+import com.learn.patten.factory.entity.Fruits;
 
 /**
  * 抽象工厂种类
