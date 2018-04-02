@@ -1,5 +1,6 @@
 package com.learn.patten.proxy.staticed;
 
+import com.learn.patten.proxy.demo.Courier;
 import com.learn.patten.proxy.demo.Tom;
 
 /**
@@ -7,15 +8,15 @@ import com.learn.patten.proxy.demo.Tom;
  * Created by admin on 2018/3/10.
  */
 public class StaticExpressProxy {
-    Tom tom;
+    Courier courier;
 
-    public StaticExpressProxy(Tom t) {
-        this.tom = t;
+    public StaticExpressProxy(Courier t) {
+        this.courier = t;
     }
 
     public void buyFlower() {
         System.out.println("快递公司代办中");
-        tom.buyFlower();
+        courier.buyFlower();
         System.out.println("快递公司处理结束");
 
     }
