@@ -1,7 +1,5 @@
 package com.learn.patten.observer.subject;
 
-import com.learn.patten.observer.core.EventListener;
-
 /**
  * 被观察者
  * Created by ghost on 2018-04-02.

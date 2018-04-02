@@ -1,12 +1,10 @@
 package com.learn.patten.observer.subject;
 
-import com.learn.patten.observer.core.Event;
-
 /**
  * 观察者
  * Created by ghost on 2018-04-02.
  */
-public class Observer {
+public class EventObserver {
     //观察者处理方法
     public void onAdd(Event e) {
         System.out.println("被观察者调用了add方法");

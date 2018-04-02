@@ -1,12 +1,11 @@
-package com.learn.patten.observer.core;
+package com.learn.patten.observer.proxy;
 
 import java.lang.reflect.Method;
 
 /**
  * Created by ghost on 2018-04-02.
  */
-public class Event {
-
+public class MouseEvent {
     //事件源
     private Object source;
     //通知目标
@@ -18,7 +17,8 @@ public class Event {
     //时间
     private long time;
 
-    public Event(Object target, Method method) {
+
+    public MouseEvent(Object target, Method method) {
         this.target = target;
         this.method = method;
     }
@@ -61,16 +61,5 @@ public class Event {
 
     public void setTime(long time) {
         this.time = time;
-    }
-
-    @Override
-    public String toString() {
-        return "Event{" +
-                "source=" + source +
-                ", target=" + target +
-                ", method=" + method +
-                ", trigger='" + trigger + '\'' +
-                ", time=" + time +
-                '}';
     }
 }

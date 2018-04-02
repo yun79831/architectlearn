@@ -1,4 +1,4 @@
-package com.learn.patten.observer.core;
+package com.learn.patten.observer.subject;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
